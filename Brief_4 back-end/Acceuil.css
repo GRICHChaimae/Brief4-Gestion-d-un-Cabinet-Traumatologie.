@@ -193,15 +193,6 @@ h1{
 }
 
 
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 600px) {
     #logo{
         width: 55x;
@@ -235,9 +226,8 @@ h1{
     }
 
     .footer{
-        position:absolute;
+        position: relative;
         bottom:0;
-        z-index: 2;
     }
 
     .footer ul{
@@ -251,7 +241,8 @@ h1{
         margin-top: 90px;
         width: 500px;
         left: 0;
-        margin-left: -60px;
+        margin-left: -130px;
+        padding-left: 0px;
     }
     
     .btn{
