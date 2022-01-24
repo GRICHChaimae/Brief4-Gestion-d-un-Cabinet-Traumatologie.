@@ -231,7 +231,8 @@ img{
         margin-left: 80px;
     }
     .footer{
-        z-index: 2;
+        position: relative;
+        bottom:0;
     }
 
     .footer ul{
@@ -245,7 +246,7 @@ img{
         margin-top: 90px;
         width: 500px;
         left: 0;
-        margin-left: -90px;
+        margin-left: -130px;
         padding-left: 0px;
     }
     
