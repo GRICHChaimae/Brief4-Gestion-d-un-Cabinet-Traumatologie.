@@ -186,8 +186,8 @@ th {
         height: 60px;
       }
 
-    .footer{
-        
+      .footer{
+        position: relative;
         bottom:0;
         z-index: -1;
     }
@@ -203,7 +203,7 @@ th {
         margin-top: 90px;
         width: 500px;
         left: 0;
-        margin-left: 0px;
+        margin-left: -130px;
         padding-left: 0px;
     }
     
