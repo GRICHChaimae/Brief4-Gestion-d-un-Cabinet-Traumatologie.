@@ -239,10 +239,9 @@ P{
         margin-top: 17px;
     }
 
-    .footer{
-        z-index: 2;
+     .footer{
         position: relative;
-        margin-top: 1px;
+        bottom:0;
     }
 
     .footer ul{
@@ -256,7 +255,7 @@ P{
         margin-top: 90px;
         width: 500px;
         left: 0;
-        margin-left: -60px;
+        margin-left: -130px;
         padding-left: 0px;
     }
     
