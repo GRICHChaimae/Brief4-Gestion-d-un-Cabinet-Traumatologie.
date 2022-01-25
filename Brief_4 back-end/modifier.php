@@ -59,7 +59,7 @@ $tp = $_GET['tp'];
     </nav>
 
 
-    <div class="parents">
+    <div>
         <div>
             <h1>Modification</h1>
 
