@@ -125,6 +125,10 @@ var yyyy = today.getFullYear();
 today = yyyy+'-'+mm+'-'+dd;
 document.getElementById("date").setAttribute("max", today);
 
+    function result(){
+        document.getElementById("result").style.display="block";
+        setTimeout(function(){document.getElementById("result").style.display="none";},2000);   
+    }
 
 </script>
 </body>
@@ -152,7 +156,7 @@ document.getElementById("date").setAttribute("max", today);
         $stmt->bind_param("ssssss", $lastName, $firstName, $Date_de_naissance, $Numero_de_télephone, $email, $LaMaladie);
         $execval = $stmt->execute();
         header('Location: ajouter.php');
-        echo '<script>alert("Le patient est ajouter ")</script>';
+        echo '<script> result() </script>';
         $stmt->close();
         $conn->close();
     ?>
