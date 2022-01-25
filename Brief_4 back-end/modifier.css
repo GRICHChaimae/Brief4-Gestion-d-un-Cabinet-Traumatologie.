@@ -194,10 +194,6 @@ P{
     position:absolute;
 }
 
-.parents{
-    position:relative;
-    z-index: -1;
-}
 .vec1{
     width: 25px;
     height: 25px;
