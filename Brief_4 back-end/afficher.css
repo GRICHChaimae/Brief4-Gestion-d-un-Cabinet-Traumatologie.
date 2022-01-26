@@ -181,6 +181,10 @@ th {
       display: block;
       margin-right: 20px;
     }
+    
+     .container{
+      overflow-x: scroll;
+      }
 
     td{
         height: 60px;
