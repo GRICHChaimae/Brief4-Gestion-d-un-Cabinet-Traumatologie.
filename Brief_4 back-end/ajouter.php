@@ -151,12 +151,8 @@ document.getElementById("date").setAttribute("max", today);
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Check connection
-        $stmt = $conn->prepare("insert into patient(nom, prenom, dtn, tele, gmail, maladie) values(?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssss", $lastName, $firstName, $Date_de_naissance, $Numero_de_télephone, $email, $LaMaladie);
-        $execval = $stmt->execute();
-        header('Location: ajouter.php');
+    $sql = "insert into patient(nom, prenom, dtn, tele, gmail, maladie) values('$lastName', '$firstName', '$Date_de_naissance', '$Numero_de_télephone', '$email', '$LaMaladie')";
+        
+    $res = mysqli_query($conn, $sql);
         echo '<script> result() </script>';
-        $stmt->close();
-        $conn->close();
     ?>
