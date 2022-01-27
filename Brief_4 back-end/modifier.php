@@ -59,47 +59,48 @@ $tp = $_GET['tp'];
     </nav>
 
 
-    <div>
+    <form action="change.php" method="post">
         <div>
             <h1>Modification</h1>
 
         <div class="first_row">
             <div class="div1">
                 <p>Nom</p>
-                <input type="text">
+                <input type="text" name="nom" pattern="[a-zA-ZàâæçéèêëîïôœùûüÿÀÂÆÇnÉÈÊËÎÏÔŒÙÛÜŸ-]+" value="<?php echo $nm ?>">
             </div>
             <div class="div2">
                 <p>Prenom</p>
-                <input type="text">
+                <input type="text" name="prenom" pattern="[a-zA-ZàâæçéèêëîïôœùûüÿÀÂÆÇnÉÈÊËÎÏÔŒÙÛÜŸ-]+"  value="<?php echo $pn ?>">
             </div>
         </div>
-    
+
         <div class="second_row">
             <div class="div1">
                 <p>Date de naisance</p>
-                <input type="text">
+                <input type="text" name="dtn" value="<?php echo $dn ?>">
             </div>
             <div class="div2">
                 <p>Numero de télephone</p>
-                <input type="text">
+                <input type="text" name="tele" pattern="[0-9]{10}" title="ex : 0612345678" value="<?php echo $tp ?>">
             </div>
         </div>
-    
+
         <div class="third_row">
             <div class="div1">
                 <p>E-mail</p>
-                <input type="text">
+                <input type="text" name="gmail" pattern="[a-z0-9.%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" title="ex : exemple@exemple.ex" value="<?php echo $gm ?>">
             </div>
             <div class="div2">
                 <p>La maladie</p>
-                <input type="text">
+                <input type="text" name="malad" pattern="[a-zA-Zàâæçéèêëîïôœ ùûüÿÀÂÆÇnÉÈÊËÎÏÔŒÙÛÜŸ-]+" value="<?php echo $md ?>">
             </div>
+            <input type="text" style='display:none;' name="in" value="<?php echo $gm ?>">
         </div>
-    
-        <button class="btn"><a onclick="result()" style="color: white;">Enregistrer</a></button>
-    
+        <input class="btn" onclick="result()" type="submit" value="Enregistrer" />
+
+
         </div>
-    </div>
+</form>
         
     
     
