@@ -225,11 +225,6 @@ h1{
         margin: auto;
     }
 
-    .footer{
-        position: relative;
-        bottom:0;
-    }
-
     .footer ul{
         display: block;
     }
