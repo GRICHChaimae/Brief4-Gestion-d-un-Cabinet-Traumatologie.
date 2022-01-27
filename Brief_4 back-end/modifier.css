@@ -235,9 +235,7 @@ P{
     }
 
     .footer{
-        position: relative;
-        bottom:0;
-        z-index: 2;
+        z-index: -1;
     }
 
     .footer ul{
